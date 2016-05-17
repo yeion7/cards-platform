@@ -7,14 +7,14 @@
     <title>Videoteca</title>
 
     <!-- estilos -->
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="../dist/style.css">
 
   </head>
   <body >
     <div class="modal-container hiden" id="modal">
       <div class="modal-box">
         <a class="modal-close" id="modal-close">X</a>
-        <img class="modal-logo" src="dist/images/logo.png" alt="">
+        <img class="modal-logo" src="../dist/images/logo.png" alt="">
         <div class="modal-content">
 
         <!-- contenido del modal login-->
@@ -69,8 +69,8 @@
     <header class="header">
       <div class="header-container">
         <a href="/">
-          <img class="header-logo" src="dist/images/logo.png" alt="">
-          <img class="header-logo-responsive" src="dist/images/logo-responsive.png" alt="">
+          <img class="header-logo" src="../dist/images/logo.png" alt="">
+          <img class="header-logo-responsive" src="../dist/images/logo-responsive.png" alt="">
         </a>
 
         <div class="header-menus">
@@ -93,58 +93,118 @@
           <i class="header-icon icon-user" id="signin"></i>
         </div>
       </div>
-      <div class="hero">
-        <h1 class="hero-title">
-          Deja que las estrellas
-          ayudan a descubrir su destino
-        </h1>
+      <div class="hero left">
+        <img src="../dist/assets/fondo_cartas.png" alt="" class="hero-cover">
+        <div class="hero-content">
+          <h1 class="hero-title">Tarot</h1>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
       </div>
     </header>
 
     <div id="app">
+      <section class="perfil hiden">
+        <div class="perfil-img">
+          <img src="../dist/images/cover.jpg" alt="" class="perfil-avatar">
+        </div>
+        <div class="perfil-sobre">
+          <div>
+            <span class="perfil-section">
+              Sobre mi
+            </span>
+            <a class="perfil-editar">
+              Editar
+            </a>
+          </div>
+          <h2 class="perfil-title">Scientifantastic</h2>
+          <p class="perfil-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eum sed, ut facere molestias harum ad itaque impedit, ea eligendi aliquam voluptate placeat excepturi illum consequuntur eveniet vero. Assumenda, quidem!
+          </p>
+
+        </div>
+        <div class="perfil-info">
+          <div>
+            <span class="perfil-section">
+              Info
+            </span>
+            <a class="perfil-editar">
+              Editar
+            </a>
+          </div>
+          <div class="perfil-row">
+            <div class="perfil-left">
+              <span class="perfil-label">Username:</span>
+              <span class="perfil-label">First name:</span>
+              <span class="perfil-label">Last name:</span>
+              <span class="perfil-label">Email:</span>
+              <span class="perfil-label">Gender:</span>
+              <span class="perfil-label">Birthday:</span>
+              <span class="perfil-label">Suscription:</span>
+            </div>
+            <div class="perfil-right">
+              <span class="perfil-item">bosteromask</span>
+              <span class="perfil-item">Jose Antonio</span>
+              <span class="perfil-item">Gutierrez Caballero</span>
+              <span class="perfil-item">jagc@gmail.com</span>
+              <span class="perfil-item">Male</span>
+              <span class="perfil-item">18/12/87</span>
+              <span class="perfil-item">Yes</span>
+            </div>
+          </div>
+        </div>
+        <div class="perfil-gustos">
+
+          <a href="#" class="perfil-cerrar">Cerrar Sesión</a>
+
+        </div>
+      </section>
+
       <section class="cards">
         <a href="#" class="card link">
           <div class="card">
-            <img src="dist/assets/icon_suenos.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Sueños</h2>
+            <img src="../dist/assets/icon_amor.png" alt="logo seccion" class="card-img">
+            <h2 class="card-title">Amor</h2>
           </div>
         </a>
 
         <a href="#" class="card link">
           <div class="card">
-            <img src="dist/assets/icon_tarot.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Tarot</h2>
+            <img src="../dist/assets/icon_salud.png" alt="logo seccion" class="card-img">
+            <h2 class="card-title">Salud</h2>
           </div>
         </a>
 
         <a href="#" class="card link">
           <div class="card">
-            <img src="dist/assets/icon_rituales.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Rituales</h2>
+            <img src="../dist/assets/icon_trabajo.png" alt="logo seccion" class="card-img">
+            <h2 class="card-title">Trabajo</h2>
           </div>
         </a>
 
         <a href="#" class="card link">
           <div class="card">
-            <img src="dist/assets/icon_hechizos.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Hechizo</h2>
+            <img src="../dist/assets/icon_fortuna.png" alt="logo seccion" class="card-img">
+            <h2 class="card-title">Fortuna</h2>
           </div>
         </a>
 
         <a href="#" class="card link">
           <div class="card">
-            <img src="dist/assets/icon_magia.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Magia</h2>
+            <img src="../dist/assets/icon_familia.png" alt="logo seccion" class="card-img">
+            <h2 class="card-title">Familia</h2>
           </div>
         </a>
 
         <a href="#" class="card link">
           <div class="card">
-            <img src="dist/assets/icon_posiones.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Posiones</h2>
+            <img src="../dist/assets/icon_sabiduria.png" alt="logo seccion" class="card-img">
+            <h2 class="card-title">Sabiduría</h2>
           </div>
         </a>
       </section>
+
     </div>
 
 
@@ -169,6 +229,6 @@
 
 
     </footer>
-  <script type="text/javascript" src="dist/app.js"></script>
+  <script type="text/javascript" src="../dist/app.js"></script>
   </body>
 </html>

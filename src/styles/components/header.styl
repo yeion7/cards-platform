@@ -73,6 +73,7 @@
       display: none
 
   &-nav
+    background: $color-primary
     display: none
     left: 0
     position: absolute
@@ -84,6 +85,7 @@
       align-items: center
       display: flex
       position: static
+      background: 0
 
 .nav
   &-list
@@ -107,7 +109,7 @@
 
       &:hover
         color: white
-        background: $color-primary
+        background: darken($color-primary, 30%)
 
       &:active
         color: $color-primary
@@ -120,9 +122,10 @@
   height: auto
   justify-content: center
   padding: 0 15px
+  position: relative
   width: 100%
 
-  &-text
+  &-title
     font-size: 2.5em
     font-weight: bold
     padding: 2em 0
@@ -133,6 +136,33 @@
       font-size: 3em
       padding: 2.5em 0
       width: 60%
+
+  &-cover
+    bottom: 0
+    display: none
+    right: 0
+    position: absolute
+
+    @media screen and (min-width: 1200px)
+      display: block
+
+  &-content
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 4em 0
+    z-index: 10
+
+    @media screen and (min-width: 1200px)
+      width: 40%
+
+  &-text
+    font-size: 1em
+    width: 90%
+
+.left
+  justify-content: flex-start;
 
 .show
   display: block
