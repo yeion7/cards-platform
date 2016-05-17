@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videoteca</title>
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+  </head>
+  <body>
+    <div class="modal-container hiden" id="modal">
+      <div class="modal-box">
+        <a class="modal-close" id="modal-close">X</a>
+        <img class="modal-logo" src="../images/logo.png" alt="">
+        <div class="modal-content">
+
+        <!-- contenido del modal login-->
+
+          <form class="modal-form" action="" method="post">
+            <input class="modal-input" type="text" name="name" value="" placeholder="Nombre del usuario">
+            <input class="modal-input" type="email" name="name" value="" placeholder="Correo">
+            <button class="modal-button" type="submit" name="button">Ingresar</button>
+          </form>
+          <a href="" class="modal-button modal-button-facebook ">
+            <i class="icon-social-facebook"></i>
+            Conectar con Facebook
+          </a>
+          <a href="" class="modal-button modal-button-twitter">
+            <i class="icon-social-twitter"></i>
+            Conectar con Twitter
+          </a>
+          <div class="modal-links">
+            <a href="#" class="modal-link">No tengo Cuenta</a>
+            <a href="#" class="modal-link">Olvide mi Contraseña</a>
+          </div>
+
+        <!-- fin contenido del modal login-->
+
+        </div>
+      </div>
+    </div>
+
+    <header class="header-container">
+
+      <a href="/">
+        <img class="header-logo" src="../images/logo-responsive.png" alt="">
+      </a>
+
+      <div class="header-menus">
+        <i class="header-icon header-menu-responsive icon-menu" id="mobile-menu"></i>
+
+        <nav class="header-nav" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#">Series</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Peliculas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Deporte</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Música</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form action="" class="header-form">
+          <input type="text" name="name" value="" class="header-input" id="search-input" placeholder="Buscar">
+          <button type="submit" name="button" class="header-button" id="search-button">
+            <i class="header-icon icon-search"></i>
+          </button>
+        </form>
+
+        <i class="header-icon icon-user" id="signin"></i>
+
+      </div>
+    </header>
+
+    <div class="app">
+
+      <section class="terminos-container">
+        <h2 class="terminos-title">
+          Términos y Condiciones
+        </h2>
+
+        <!-- cada termino esta agregado en un div -->
+        <div class="terminos-term">
+          <h4 class="terminos-term-number">
+            Término 1
+          </h4>
+
+          <h3 class="terminos-term-title">
+            Acceptance of Terms
+          </h3>
+
+          <p class="terminos-term-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid provident quod mollitia, soluta tempora, minus culpa? Debitis dolorem, laboriosam iure corporis. Obcaecati consequuntur ducimus amet, distinctio debitis facilis minus ratione.
+          </p>
+        </div>
+        <!-- fin de un termino -->
+
+        <div class="terminos-term">
+          <h4 class="terminos-term-number">
+            Término 2
+          </h4>
+
+          <h3 class="terminos-term-title">
+            Modification of Terms of US
+          </h3>
+
+          <p class="terminos-term-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid provident quod mollitia, soluta tempora, minus culpa? Debitis dolorem, laboriosam iure corporis. Obcaecati consequuntur ducimus amet, distinctio debitis facilis minus ratione.
+          </p>
+        </div>
+
+        <div class="terminos-term">
+          <h4 class="terminos-term-number">
+            Término 3
+          </h4>
+
+          <h3 class="terminos-term-title">
+            Rules and Conducts
+          </h3>
+
+          <p class="terminos-term-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid provident quod mollitia, soluta tempora, minus culpa? Debitis dolorem, laboriosam iure corporis. Obcaecati consequuntur ducimus amet, distinctio debitis facilis minus ratione.
+          </p>
+        </div>
+
+        <div class="terminos-term">
+          <h4 class="terminos-term-number">
+            Término 4
+          </h4>
+
+          <h3 class="terminos-term-title">
+            Registration
+          </h3>
+
+          <p class="terminos-term-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid provident quod mollitia, soluta tempora, minus culpa? Debitis dolorem, laboriosam iure corporis. Obcaecati consequuntur ducimus amet, distinctio debitis facilis minus ratione.
+          </p>
+        </div>
+
+      </section>
+
+
+    </div>
+
+    <footer class="footer-container">
+      <div class="footer-left">
+        <a href="#" class="footer-logo">
+          LOGO
+        </a>
+
+        <a href="#">
+          <i class="footer-icon icon-facebook"></i>
+        </a>
+
+        <a href="#">
+          <i class="footer-icon icon-twitter"></i>
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <a href="#" class="footer-terminos">Terminos y Condiciones </a>
+      </div>
+
+
+    </footer>
+
+  <script type="text/javascript" src="../js/app.js"></script>
+  </body>
+</html>

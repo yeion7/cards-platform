@@ -1,0 +1,113 @@
+.modal
+  &-container
+    position: fixed;
+    width: 100%
+    height: 100vh
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 200000
+
+
+  &-box
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    position: absolute;
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%);
+    width: 350px
+    min-height: 350px
+    background: white
+
+
+  &-content
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px 25px
+    width: 100%
+    height: 100%
+
+  &-close
+    cursor: pointer;
+    position: absolute;
+    top 0%
+    right: 0%
+    font-weight: bold;
+    padding: 1em
+
+  &-logo
+    width: 180px
+    height: auto
+    padding: 1.5em 1em
+    margin 0 auto
+    align-self: center;
+
+  &-text
+    font-weight: bold;
+    font-size: .8em
+    line-height: 1.5em
+    margin: 10px 0
+
+  &-form
+    display: flex;
+    flex-direction: column;
+
+
+  &-input
+    width: 100%
+    margin 5px 0
+    padding: .5em
+    border: 1px solid #ccc
+    border-radius: 4px
+
+  &-button
+    color: white
+    font-weight: bold;
+    font-size: .9em
+    background: $color-primary
+    border none
+    margin 5px 0
+    border-radius: 5px
+    padding .7em 0
+    &:hover
+      background: lighten($color-primary, 30%)
+
+    & i
+      font-size: 1.2em
+      padding: 0 .3em
+
+
+    &-facebook
+    &-twitter
+      display: flex
+      justify-content: flex-start;
+      align-items: center
+      padding-left: 15%
+
+
+    &-facebook
+      background: #3b5998
+      &:hover
+        background: lighten(#3b5998, 30%)
+
+    &-twitter
+      background: #55acee
+      &:hover
+        background: lighten(#55acee, 30%)
+
+  &-links
+    display flex
+    justify-content: space-around
+    margin 5px 0
+
+  &-link
+    color #aaa
+    font-weight: bold;
+    font-size: .8em
+    padding .5em
+    padding-top: 15px
+    &:hover
+      color inherit

@@ -1,0 +1,37 @@
+
+
+// import global styles
+
+@import "./icomoon/style.css"
+@import "./global/reset.styl"
+@import "./global/variables.styl"
+
+*,
+*:before,
+*:after
+  box-sizing border-box
+
+body
+  font-family: sans-serif;
+  font-size: 16px
+  color: $color-text1
+  background: $background1
+  position: relative;
+
+.button-primary
+  background: $color-primary
+  padding: .6em .7em
+  border-radius: 4px
+  font-weight: bold;
+  color: white
+  border none
+  margin 0 1em
+
+.hiden
+  display: none
+// import style components
+
+@import "./components/header.styl"
+@import "./components/footer.styl"
+@import "./components/modal.styl"
+@import "./components/terminos.styl"

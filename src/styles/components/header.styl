@@ -1,0 +1,115 @@
+.header
+  &-container
+    height: 76px
+    background: $background3;
+    padding: 5px 15px
+    position: relative;
+    display flex
+    justify-content: space-between;
+    align-items: center
+    box-shadow: 0 0 1px rgba(0,0,0,.15);
+
+  &-menus
+    display: flex
+
+  &-logo
+    width: auto
+    height: 60px;
+    @media screen and (max-width: 768px) {
+      display: none
+    }
+
+    &-responsive
+      width: 60px
+      height: auto
+      @media screen and (min-width: 769px) {
+        display: none
+      }
+
+  &-icon
+    padding .5em
+    font-size: 2em;
+    cursor: pointer
+
+  &-form
+    display flex
+    align-items: center
+    justify-content: flex-end;
+
+  &-input
+    width: 50%
+    font-size: 1em
+    font-weight: bold
+    border-radius: 5px
+    line-height: 3em
+    border: none
+    display none
+    background: white
+    &:focus
+      outline-style: none;
+    @media screen and (min-width: 769px) {
+      width: 100%
+    }
+
+
+  &-button
+    background: transparent
+    border: none
+    cursor: pointer
+    font-size: 1em
+    &:focus
+      outline-style: none;
+
+  &-menu-responsive
+    order 1
+    @media screen and (min-width: 769px) {
+      display: none
+    }
+
+
+  &-nav
+    background: $background3;
+    position: absolute;
+    z-index: 10000
+    top: 76px
+    left 0
+    width: 100%
+    display: none
+    @media screen and (min-width: 769px) {
+      display: flex;
+      align-items: center
+      position: static;
+    }
+
+
+.nav
+  &-list
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+    @media screen and (min-width: 769px) {
+      flex-direction: row;
+    }
+
+  &-item
+    width: 100%
+    text-align: center
+
+    & a
+      display: block;
+      cursor: pointer
+      padding 1em
+      font-weight: 600;
+
+      &:hover
+        background: $color-primary
+        color white
+
+      &:active
+        color $color-primary
+
+
+
+.show
+  display: block;
