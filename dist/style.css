@@ -135,32 +135,6 @@ a {
   font-weight: bold;
   src: url("assets/zonapro/ZonaPro-Bold.otf") format('opentype');
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-body {
-  background: #f4f4f4;
-  color: #fff;
-  font-size: 16px;
-  position: relative;
-  max-width: 1366px;
-  margin: 0 auto;
-  font-family: 'zonapro';
-}
-.button-primary {
-  background: #4c2f65;
-  border: 0;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: bold;
-  margin: 0 1em;
-  padding: 0.6em 0.7em;
-}
-.hiden {
-  display: none;
-}
 .header {
   background-color: #2c1d3c;
   background-image: url("assets/fondo_estrellas.jpg");
@@ -666,6 +640,8 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  top: 72px;
 }
 @media screen and (min-width: 769px) {
   .perfil {
@@ -736,6 +712,7 @@ body {
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
+  background: #eee;
   padding: 15px;
   width: 100%;
 }
@@ -817,4 +794,30 @@ body {
 .perfil-cerrar:hover {
   background: #e46582;
   color: #fff;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background: #f4f4f4;
+  color: #fff;
+  font-family: 'zonapro';
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 1366px;
+  position: relative;
+}
+.button-primary {
+  background: #4c2f65;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 1em;
+  padding: 0.6em 0.7em;
+}
+.hiden {
+  display: none;
 }

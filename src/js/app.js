@@ -17,10 +17,15 @@ function toggleClass(target, clase) {
 var signinButton = document.getElementById('signin');
 var modalContainer = document.getElementById('modal');
 var modalButton = document.getElementById('modal-close');
+var perfilContainer = document.querySelector('.perfil');
 
 signinButton.addEventListener('click', function (ev) {
   ev.preventDefault();
-  toggleClass(modalContainer, 'hiden');
+  if (perfilContainer) {
+    toggleClass(perfilContainer, 'hiden');
+  } else {
+    toggleClass(modalContainer, 'hiden');
+  }
 });
 
 modalButton.addEventListener('click', function (ev) {

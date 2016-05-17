@@ -6,6 +6,16 @@
 @import "./global/reset.styl"
 @import "./global/variables.styl"
 
+
+// import style components
+
+@import "./components/header.styl"
+@import "./components/footer.styl"
+@import "./components/modal.styl"
+@import "./components/terminos.styl"
+@import "./components/cards.styl"
+@import "./components/perfil.styl"
+
 // base layout
 
 *,
@@ -16,11 +26,11 @@
 body
   background: $background1
   color: $color-text1
-  font-size: 16px
-  position: relative
-  max-width: 1366px
-  margin: 0 auto
   font-family: 'zonapro'
+  font-size: 16px
+  margin: 0 auto
+  max-width: 1366px
+  position: relative
 
 .button-primary
   background: $color-primary
@@ -33,13 +43,3 @@ body
 
 .hiden
   display: none
-
-
-// import style components
-
-@import "./components/header.styl"
-@import "./components/footer.styl"
-@import "./components/modal.styl"
-@import "./components/terminos.styl"
-@import "./components/cards.styl"
-@import "./components/perfil.styl"
