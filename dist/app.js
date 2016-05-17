@@ -10,22 +10,10 @@ mobileMenu.addEventListener('click', function (ev) {
   navMenu.classList.toggle('show');
 });
 
-// desplegar barra de busqueda
-var searchButton = document.getElementById('search-button');
-var searchInput = document.getElementById('search-input');
-
-searchButton.addEventListener('click', function (ev) {
-  ev.preventDefault();
-  searchInput.classList.toggle('show');
-  mobileMenu.classList.toggle('hiden');
-  navMenu.classList.toggle('hiden');
-  signinButton.classList.toggle('hiden');
-});
-
 //desplegar modal
 
 function toggleClass(target, clase) {
-  console.log(target.classList.toggle(clase));
+  target.classList.toggle(clase);
 };
 
 var signinButton = document.getElementById('signin');

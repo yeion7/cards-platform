@@ -7,14 +7,14 @@
     <title>Videoteca</title>
 
     <!-- estilos -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="dist/style.css">
 
   </head>
   <body >
     <div class="modal-container hiden" id="modal">
       <div class="modal-box">
         <a class="modal-close" id="modal-close">X</a>
-        <img class="modal-logo" src="./images/logo.png" alt="">
+        <img class="modal-logo" src="dist/images/logo.png" alt="">
         <div class="modal-content">
 
         <!-- contenido del modal login-->
@@ -66,48 +66,43 @@
       </div>
     </div>
 
-    <header class="header-container">
-      <a href="/">
-        <img class="header-logo" src="./images/logo.png" alt="">
-        <img class="header-logo-responsive" src="./images/logo-responsive.png" alt="">
-      </a>
+    <header class="header">
+      <div class="header-container">
+        <a href="/">
+          <img class="header-logo" src="dist/images/logo.png" alt="">
+          <img class="header-logo-responsive" src="dist/images/logo-responsive.png" alt="">
+        </a>
 
-      <div class="header-menus">
-        <i class="header-icon header-menu-responsive icon-menu" id="mobile-menu"></i>
+        <div class="header-menus">
+          <i class="header-icon header-menu-responsive icon-menu" id="mobile-menu"></i>
 
-        <nav class="header-nav" id="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#">Noticias</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Deportes</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Entretenimiento</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Farandula</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Política</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="header-nav" id="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#">Sueños</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Rituales</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Tarot</a>
+              </li>
+            </ul>
+          </nav>
 
-        <form action="" class="header-form">
-          <input type="text" name="name" value="" class="header-input" id="search-input" placeholder="Buscar">
-          <button type="submit" name="button" class="header-button" id="search-button">
-            <i class="header-icon icon-search "></i>
-          </button>
-        </form>
-
-        <i class="header-icon icon-user" id="signin"></i>
-
+          <i class="header-icon icon-user" id="signin"></i>
+        </div>
+      </div>
+      <div class="hero">
+        <h1 class="hero-text">
+          Deja que las estrellas
+          ayudan a descubrir su destino
+        </h1>
       </div>
     </header>
 
     <div id="app">
+    </div>
 
 
     <footer class="footer-container">
@@ -131,6 +126,6 @@
 
 
     </footer>
-  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="dist/app.js"></script>
   </body>
 </html>
