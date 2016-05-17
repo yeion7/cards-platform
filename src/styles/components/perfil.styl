@@ -1,0 +1,106 @@
+.perfil
+  align-items: flex-start
+  color: #333
+  display: flex
+  flex-direction: column
+
+  @media screen and (min-width: 769px) {
+    flex-direction: row
+  }
+
+
+  &-img
+    align-items: center
+    align-self: stretch
+    background: #eee
+    display: flex
+    padding: 15px
+    justify-content: center
+
+  &-avatar
+    border-radius: 50%
+    height: 130px
+    width: 130px
+    
+
+  &-sobre
+    align-self: stretch
+    background: white
+    padding: 15px
+
+  &-section
+    background: #333
+    color: white
+    font-size: .9em
+    font-weight: bold
+    margin-right: 5px
+    padding: .3em
+    text-transform: uppercase
+
+  &-editar
+    color: $color-secundary
+    cursor: pointer
+    font-size: .6em
+    font-weight: bold
+
+  &-title
+    font-size: 1.5em
+    font-weight: bold
+    margin: 15px 0
+    text-transform: uppercase
+
+  &-text
+    color: inherit
+    line-height: 1.2em
+
+  &-info
+    align-self: stretch
+    padding: 15px
+    width: 100%
+
+  &-row
+    display: flex
+    padding: 15px 0
+
+  &-left
+  &-right
+    display: flex
+    flex-direction: column
+    line-height: 1.2em
+
+  &-left
+    margin-right: 30px
+
+  &-label
+    font-weight: bold
+
+  &-gustos
+    align-items: center
+    align-self: stretch
+    background: white
+    display: flex
+    justify-content: center
+    padding: 15px
+    width: 100%
+
+  &-selects
+    display: flex
+    padding: 15px 0 40px 0
+    line-height: 1.2em
+
+    & div
+      display: flex
+      flex-direction: column
+      margin-right: 15px
+
+    & label
+      font-weight: bold
+
+  &-cerrar
+    border 1px solid $color-secundary
+    color: $color-secundary
+    font-weight: bold;
+    padding: .5em
+    &:hover
+      background: $color-secundary
+      color white

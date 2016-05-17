@@ -513,14 +513,14 @@ body {
   color: #fff;
   font-weight: bold;
   font-size: 0.9em;
-  background: #4c2f65;
-  border: none;
+  background: #e46582;
+  border: 0;
   margin: 5px 0;
   border-radius: 5px;
   padding: 0.7em 0;
 }
 .modal-button:hover {
-  background: #8452af;
+  background: #c42247;
 }
 .modal-button i {
   font-size: 1.2em;
@@ -572,7 +572,7 @@ body {
   padding-top: 15px;
 }
 .modal-link:hover {
-  color: inherit;
+  color: #e46582;
 }
 .terminos-container {
   width: 100%;
@@ -643,8 +643,178 @@ body {
           justify-content: center;
   width: 350px;
 }
+.card:hover {
+  background: #c42247;
+}
 .card-title {
   font-size: 2em;
   font-weight: bold;
   padding: 20px 0;
+}
+.perfil {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #333;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  .perfil {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.perfil-img {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background: #eee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.perfil-avatar {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+}
+.perfil-sobre {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background: #fff;
+  padding: 15px;
+}
+.perfil-section {
+  background: #333;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-right: 5px;
+  padding: 0.3em;
+  text-transform: uppercase;
+}
+.perfil-editar {
+  color: #e46582;
+  cursor: pointer;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+.perfil-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+.perfil-text {
+  color: inherit;
+  line-height: 1.2em;
+}
+.perfil-info {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  padding: 15px;
+  width: 100%;
+}
+.perfil-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+}
+.perfil-left,
+.perfil-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.2em;
+}
+.perfil-left {
+  margin-right: 30px;
+}
+.perfil-label {
+  font-weight: bold;
+}
+.perfil-gustos {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+.perfil-selects {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0 40px 0;
+  line-height: 1.2em;
+}
+.perfil-selects div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 15px;
+}
+.perfil-selects label {
+  font-weight: bold;
+}
+.perfil-cerrar {
+  border: 1px solid #e46582;
+  color: #e46582;
+  font-weight: bold;
+  padding: 0.5em;
+}
+.perfil-cerrar:hover {
+  background: #e46582;
+  color: #fff;
 }
