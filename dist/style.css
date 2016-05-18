@@ -1111,3 +1111,6 @@ body {
 .hiden {
   display: none;
 }
+.ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+  background-color: #e46582 !important;
+}
