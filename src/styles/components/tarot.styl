@@ -12,13 +12,25 @@
     font-weight: bold
     padding: 1em 0
 
-  &-cards
-    background: steelblue
-    height: 300px
-    margin: 15px 0
-    width: 90%
+  &-options
+    display: flex
+    flex-direction: column;
+    width: 100%
+    align-items: center;
+    justify-content: center
+    margin-bottom: 50px
 
-  &-cards,
+    &-cards
+      align-items: center
+      display: flex
+      justify-content: center
+      height: 300px
+      margin: 15px 0
+      overflow-x: scroll
+      overflow-y: hidden
+      position: relative
+      width: 90%
+
   &-select
     align-items: center
     display: flex
@@ -29,8 +41,9 @@
     &-cards
       display: flex
       justify-content: space-around;
-      margin: 15px 0
+      margin: 50px 0
       width: 100%
+
 
 .button
   border: 1px solid $color-secundary
@@ -42,11 +55,26 @@
     background: $color-secundary
     color: white
 
+.card-option
+  border-radius: 4px
+  flex: none
+  height: 200px
+  margin: 15px
+  position: relative
+  width: 150px
+
+  &:hover
+    transform: scale(1.2)
+
+.border
+  border-radius: 6px
+
 .card-front
 .card-back
   cursor: pointer
   height: 100%
   width: 100%
+  border-radius: 4px
 
 
 
@@ -94,5 +122,5 @@
 
 /* back, initially hidden pane */
 .front {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) scale(1.4);
 }

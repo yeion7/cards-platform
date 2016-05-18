@@ -8,6 +8,7 @@
 
     <!-- estilos -->
     <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.css">
 
   </head>
   <body >
@@ -101,69 +102,55 @@
       </div>
     </header>
 
-    <section class="perfil hiden">
-      <div class="perfil-img">
-        <img src="../dist/images/cover.jpg" alt="" class="perfil-avatar">
-      </div>
-      <div class="perfil-sobre">
-        <div>
-          <span class="perfil-section">
-            Sobre mi
-          </span>
-          <a class="perfil-editar">
-            Editar
-          </a>
-        </div>
-        <h2 class="perfil-title">Scientifantastic</h2>
-        <p class="perfil-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eum sed, ut facere molestias harum ad itaque impedit, ea eligendi aliquam voluptate placeat excepturi illum consequuntur eveniet vero. Assumenda, quidem!
-        </p>
-
-      </div>
-      <div class="perfil-info">
-        <div>
-          <span class="perfil-section">
-            Info
-          </span>
-          <a class="perfil-editar">
-            Editar
-          </a>
-        </div>
-        <div class="perfil-row">
-          <div class="perfil-left">
-            <span class="perfil-label">Username:</span>
-            <span class="perfil-label">First name:</span>
-            <span class="perfil-label">Last name:</span>
-            <span class="perfil-label">Email:</span>
-            <span class="perfil-label">Gender:</span>
-            <span class="perfil-label">Birthday:</span>
-            <span class="perfil-label">Suscription:</span>
-          </div>
-          <div class="perfil-right">
-            <span class="perfil-item">bosteromask</span>
-            <span class="perfil-item">Jose Antonio</span>
-            <span class="perfil-item">Gutierrez Caballero</span>
-            <span class="perfil-item">jagc@gmail.com</span>
-            <span class="perfil-item">Male</span>
-            <span class="perfil-item">18/12/87</span>
-            <span class="perfil-item">Yes</span>
-          </div>
-        </div>
-      </div>
-      <div class="perfil-gustos">
-        <a href="#" class="perfil-cerrar">Cerrar Sesión</a>
-      </div>
-    </section>
-
     <div id="app">
+
       <section class="tarot">
         <h1 class="tarot-title">Salud</h1>
-        <div class="tarot-cards">
 
+        <!-- Cartas por seleccionar -->
+
+        <div class="tarot-options" >
+          <div class="tarot-options-cards" id="container">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+            <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-option">
+          </div>
+          <a class="tarot-options-button button">Seleccionar</a>
         </div>
+
+
+        <!-- Cartas Seleccionadas  -->
         <div class="tarot-select">
           <div class="tarot-select-cards">
-
             <div class="card-container" onclick="this.classList.toggle('flip');">
 	            <div class="flipper">
 		            <div class="front">
@@ -202,13 +189,30 @@
                 </div>
               </div>
             </div>
-
-
-
           </div>
-          <a class="tarot-select-button button">Voltear</a>
+
+          <a class="tarot-select-button button">Significado</a>
         </div>
       </section>
+
+
+      <div class="modal-container hiden" id='significado'>
+        <img src="../dist/assets/carta.jpg" alt="tarot-card" class="border modal-image">
+        <div class="modal-box">
+          <div class="modal-close" id="close-significado">X</div>
+          <div class="modal-content">
+            <h1 class="modal-title">II Carro</h1>
+            <p class="modal-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Accusantium sequi natus asperiores ea quaerat, ratione laudantium id odio amet
+               porro excepturi eaque earum illo modi, vero vel dignissimos quos molestias?
+            </p>
+            <p class="modal-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Accusantium sequi natus asperiores ea quaerat, ratione laudantium id odio amet
+               porro excepturi eaque earum illo modi, vero vel dignissimos quos molestias?
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -233,6 +237,8 @@
 
 
     </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/perfect-scrollbar.js"></script>
   <script type="text/javascript" src="../dist/app.js"></script>
   </body>
 </html>
+|

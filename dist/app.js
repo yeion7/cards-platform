@@ -18,8 +18,13 @@ function toggleClass(target, clase) {
 
 var signinButton = document.getElementById('signin');
 var modalContainer = document.getElementById('modal');
-var modalButton = document.getElementById('modal-close');
+var modalContainer = document.getElementById('modal');
+var modalClose = document.getElementById('modal-close');
 var perfilContainer = document.querySelector('.perfil');
+
+var modalSignificado = document.getElementById('significado');
+var significadoButton = document.querySelector('.tarot-select-button');
+var significadoClose = document.getElementById('close-significado');
 
 signinButton.addEventListener('click', function (ev) {
   ev.preventDefault();
@@ -30,7 +35,25 @@ signinButton.addEventListener('click', function (ev) {
   }
 });
 
-modalButton.addEventListener('click', function (ev) {
+modalClose.addEventListener('click', function (ev) {
   ev.preventDefault();
   toggleClass(modalContainer, 'hiden');
 });
+
+significadoClose.addEventListener('click', function (ev) {
+  ev.preventDefault();
+  toggleClass(modalSignificado, 'hiden');
+});
+
+significadoButton.addEventListener('click', function (ev) {
+  ev.preventDefault();
+  if (modalSignificado) {
+    toggleClass(modalSignificado, 'hiden');
+  }
+});
+
+var container = document.getElementById('container');
+
+if (container) {
+  Ps.initialize(container);
+}
