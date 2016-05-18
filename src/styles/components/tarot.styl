@@ -1,0 +1,98 @@
+.tarot
+  align-items: center
+  background: $color-primary
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 15px
+  width: 100%
+
+  &-title
+    font-size: 2em
+    font-weight: bold
+    padding: 1em 0
+
+  &-cards
+    background: steelblue
+    height: 300px
+    margin: 15px 0
+    width: 90%
+
+  &-cards,
+  &-select
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+
+    &-cards
+      display: flex
+      justify-content: space-around;
+      margin: 15px 0
+      width: 100%
+
+.button
+  border: 1px solid $color-secundary
+  color: $color-secundary
+  cursor: pointer
+  padding: .5em 1em
+
+  &:hover
+    background: $color-secundary
+    color: white
+
+.card-front
+.card-back
+  cursor: pointer
+  height: 100%
+  width: 100%
+
+
+
+/* entire container, keeps perspective */
+.card-container {
+  perspective: 1000;
+}
+  /* flip the pane when hovered */
+  .card-container.flip .flipper {
+    transform: rotateY(180deg);
+  }
+
+.card-container, .front, .back
+  width: 100px;
+  height: 150px;
+
+  @media screen and (min-width: 769px) {
+    width: 150px;
+    height: 200px;
+  }
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.back {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.front {
+  transform: rotateY(180deg);
+}

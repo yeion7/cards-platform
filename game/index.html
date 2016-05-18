@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <header class="header">
+    <header class="header background">
       <div class="header-container">
         <a href="/">
           <img class="header-logo" src="../dist/images/logo.png" alt="">
@@ -93,7 +93,7 @@
           <i class="header-icon icon-user" id="signin"></i>
         </div>
       </div>
-      <div class="hero">
+      <div class="hero hiden">
         <h1 class="hero-title">
           Deja que las estrellas
           ayudan a descubrir su destino
@@ -151,58 +151,64 @@
         </div>
       </div>
       <div class="perfil-gustos">
-
         <a href="#" class="perfil-cerrar">Cerrar Sesión</a>
-
       </div>
     </section>
 
     <div id="app">
+      <section class="tarot">
+        <h1 class="tarot-title">Salud</h1>
+        <div class="tarot-cards">
 
-      <section class="cards">
-        <a href="#" class="card link">
-          <div class="card">
-            <img src="../dist/assets/icon_suenos.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Sueños</h2>
-          </div>
-        </a>
+        </div>
+        <div class="tarot-select">
+          <div class="tarot-select-cards">
 
-        <a href="#" class="card link">
-          <div class="card">
-            <img src="../dist/assets/icon_tarot.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Tarot</h2>
-          </div>
-        </a>
+            <div class="card-container" onclick="this.classList.toggle('flip');">
+	            <div class="flipper">
+		            <div class="front">
+			            <!-- front content -->
+                  <img src="../dist/assets/carta.jpg" alt="tarot-card" class="card-front">
+		            </div>
+		            <div class="back">
+			            <!-- back content -->
+                  <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-back">
+		            </div>
+	            </div>
+            </div>
 
-        <a href="#" class="card link">
-          <div class="card">
-            <img src="../dist/assets/icon_rituales.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Rituales</h2>
-          </div>
-        </a>
+            <div class="card-container" onclick="this.classList.toggle('flip');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="../dist/assets/carta.jpg" alt="tarot-card" class="card-front">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-back">
+                </div>
+              </div>
+            </div>
 
-        <a href="#" class="card link">
-          <div class="card">
-            <img src="../dist/assets/icon_hechizos.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Hechizo</h2>
-          </div>
-        </a>
+            <div class="card-container" onclick="this.classList.toggle('flip');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="../dist/assets/carta.jpg" alt="tarot-card" class="card-front">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="../dist/assets/carta_reverso.jpg" alt="tarot-card" class="card-back">
+                </div>
+              </div>
+            </div>
 
-        <a href="#" class="card link">
-          <div class="card">
-            <img src="../dist/assets/icon_magia.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Magia</h2>
-          </div>
-        </a>
 
-        <a href="#" class="card link">
-          <div class="card">
-            <img src="../dist/assets/icon_posiones.png" alt="logo seccion" class="card-img">
-            <h2 class="card-title">Posiones</h2>
+
           </div>
-        </a>
+          <a class="tarot-select-button button">Voltear</a>
+        </div>
       </section>
-
     </div>
 
 
