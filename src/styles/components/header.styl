@@ -36,6 +36,9 @@
     font-size: 2em
     padding: .5em
 
+    &.icon-user
+      color $color-secundary
+
   &-form
     align-items: center
     display flex
@@ -108,8 +111,7 @@
       padding: 1em
 
       &:hover
-        color: white
-        background: darken($color-primary, 30%)
+        border-bottom: solid 3px #e46582
 
       &:active
         color: $color-primary
@@ -131,6 +133,13 @@
     padding: 2em 0
     text-align: center
     width: 100%
+
+    &-tarot
+      padding: 1em 0
+      font-size: 2.5em
+      font-weight: bold
+      text-align: center
+      width: 100%
 
     @media screen and (min-width: 769px)
       font-size: 3em

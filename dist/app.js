@@ -40,18 +40,19 @@ modalClose.addEventListener('click', function (ev) {
   toggleClass(modalContainer, 'hiden');
 });
 
-significadoClose.addEventListener('click', function (ev) {
-  ev.preventDefault();
-  toggleClass(modalSignificado, 'hiden');
-});
-
-significadoButton.addEventListener('click', function (ev) {
-  ev.preventDefault();
-  if (modalSignificado) {
+if (significadoClose) {
+  significadoClose.addEventListener('click', function (ev) {
+    ev.preventDefault();
     toggleClass(modalSignificado, 'hiden');
-  }
-});
+  });
 
+  significadoButton.addEventListener('click', function (ev) {
+    ev.preventDefault();
+    if (modalSignificado) {
+      toggleClass(modalSignificado, 'hiden');
+    }
+  });
+}
 var container = document.getElementById('container');
 
 if (container) {

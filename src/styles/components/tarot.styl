@@ -4,7 +4,6 @@
   display: flex
   flex-direction: column
   justify-content: center
-  padding: 15px
   width: 100%
 
   &-title
@@ -13,12 +12,12 @@
     padding: 1em 0
 
   &-options
+    align-items: center
     display: flex
-    flex-direction: column;
-    width: 100%
-    align-items: center;
+    flex-direction: column
     justify-content: center
     margin-bottom: 50px
+    width: 100%
 
     &-cards
       align-items: center
@@ -29,7 +28,11 @@
       overflow-x: scroll
       overflow-y: hidden
       position: relative
-      width: 90%
+      transform: rotate(180deg)
+      width: 100%
+
+      @media screen and (min-width: 769px)
+        width: 90%
 
   &-select
     align-items: center
@@ -59,12 +62,14 @@
   border-radius: 4px
   flex: none
   height: 200px
-  margin: 15px
+  margin: 10px
   position: relative
   width: 150px
 
   &:hover
     transform: scale(1.2)
+    margin: 0 50px
+    box-shadow: 3px 3px 10px rgba(235,228,235,1);
 
 .border
   border-radius: 6px
@@ -121,6 +126,8 @@
 }
 
 /* back, initially hidden pane */
-.front {
-  transform: rotateY(180deg) scale(1.4);
-}
+.front
+  transform: rotateY(180deg) scale(1.2);
+
+  @media screen and (min-width: 769px)
+    transform: rotateY(180deg) scale(1.4);
