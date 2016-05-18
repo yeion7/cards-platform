@@ -1,0 +1,146 @@
+.videos
+  &-container
+    padding 15px
+    position: relative;
+
+  &-seleccion
+    display: flex
+    justify-content: space-between;
+    align-items: center
+    padding 1em 0
+
+  &-title
+    display flex
+    align-items: center
+    flex-wrap: wrap;
+
+  &-select
+    background: none
+    border 1px solid #aaa
+    font-size: 1em
+    color #aaa
+    border-radius: 5px
+
+    padding .2em
+
+  &-order
+    font-weight: bold;
+    font-size: 1em
+    padding: .5em 1em
+    cursor pointer
+    &:hover
+      color: $color-primary
+
+    &:active
+      background: $color-primary
+      border-radius: 5px
+      color white
+
+    &-desk
+      display none
+      @media screen and (min-width: 769px) {
+        display: flex
+
+      }
+
+    &-mobile
+      @media screen and (min-width: 769px) {
+        display: none
+      }
+
+
+  &-category
+    font-size: 1.6em
+    font-weight: bold;
+    text-transform: capitalize;
+
+  &-prev
+    padding .4em
+    border 3px solid #ccc
+    border-radius: 4px
+    color #ccc
+    cursor pointer
+
+  &-next
+    padding .4em
+    border 3px solid $color-primary
+    border-radius: 4px
+    color #ccc
+    background: $color-primary
+    cursor pointer
+
+  &-icon
+    font-size: 1.5em
+    color $color-primary
+    margin-right: 5px
+  &-items
+    display flex
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin 15px 0
+    @media screen and (min-width: 769px) {
+      justify-content: space-between;
+    }
+
+  &-item
+    background: white
+    width: 300px
+    height: 320px
+    margin: 15px 0
+
+
+    &-tape
+      width: 100%
+      height: 70%
+
+
+    &-cover
+      width: 100%
+      height: 100%
+
+    &-info
+      display: flex;
+      width: 100%
+      justify-content: space-between;
+      align-items: center
+
+
+    &-time
+    &-likes
+    &-message
+      font-size: .8em
+      color: #aaa
+      font-weight: bold;
+
+
+    &-icon
+      color $color-primary
+
+    &-duration
+      font-size: .8em
+      color: $color-primary
+      font-weight: bold;
+    &-name
+      padding 10px
+      height: 30%
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    &-title
+      font-weight: bold;
+
+  &-selected
+    border 5px solid $color-primary
+    position: relative;
+    &:after
+      content: ""
+      z-index: 10000
+      position: absolute;
+      bottom: -25px
+      left: 45%
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 15px 0 15px;
+      border-color: $color-primary transparent transparent transparent;

@@ -1,0 +1,74 @@
+.dropdown
+  &-container
+    width: 100%
+    height: 300px
+    background: url(../dist/images/cover.jpg)
+    position: relative;
+    z-index: 1000
+
+
+  &-close
+    position: absolute;
+    right: 10px;
+    font-size: 1.5em
+    font-weight: bold;
+    color $color-text2
+    padding: 1em
+    cursor: pointer;
+
+  &-gradient
+    width: 100%
+    height: 100%
+    z-index: 100
+    background: linear-gradient(to right, #000, rgba(0, 0, 0, 0))
+    display: flex
+
+  &-content
+    width: 60%
+    height: 100%
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px
+
+
+  &-artist
+    font-size: 1.3em
+    font-weight: bold;
+    color $color-primary
+    margin-bottom: 5px
+
+  &-name
+    font-size: 3em
+    font-weight: bold;
+    color white
+
+  &-time
+    color $color-primary
+    font-weight: bold;
+
+  &-text
+    color white
+    line-height: 1.2em
+
+  &-user
+    color white
+    font-weight: bold;
+    font-size: 1.2em
+    margin-right: 15px
+    text-transform: uppercase;
+
+  &-icons
+    display: flex;
+    align-items: center
+
+  &-avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    margin-right: 5px
+
+  &-player
+    width: 35%
+    height: 100%
+    position: relative;

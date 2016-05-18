@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videoteca</title>
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="../dist/style.css">
+
+  </head>
+  <body >
+    <div class="modal-container hiden" id="modal">
+      <div class="modal-box">
+        <a class="modal-close" id="modal-close">X</a>
+        <img class="modal-logo" src="../dist/images/logo.png" alt="">
+        <div class="modal-content">
+
+        <!-- contenido del modal login-->
+
+          <form class="modal-form" action="" method="post">
+            <input class="modal-input" type="text" name="name" value="" placeholder="Nombre del usuario">
+            <input class="modal-input" type="email" name="name" value="" placeholder="Correo">
+            <button class="modal-button" type="submit" name="button">Ingresar</button>
+          </form>
+          <div class="modal-links">
+            <a href="#" class="modal-link">No tengo Cuenta</a>
+            <a href="#" class="modal-link">Olvide mi Contraseña</a>
+          </div>
+
+        <!-- fin contenido del modal login-->
+
+        <!-- contenido modal signin -->
+
+        <!-- <form class="modal-form" action="" method="post">
+          <input class="modal-input" type="text" name="name" value="" placeholder="Nombre">
+          <input class="modal-input" type="text" name="name" value="" placeholder="Apellido">
+          <input class="modal-input" type="text" name="name" value="" placeholder="Nombre del usuario">
+          <input class="modal-input" type="email" name="name" value="" placeholder="Correo">
+          <button class="modal-button" type="submit" name="button">Crear cuenta</button>
+        </form>
+        <div class="modal-links">
+          <a href="#" class="modal-link">Terminos y condiciones</a>
+        </div> -->
+
+        <!-- fin contenido modal signin -->
+
+        <!-- contenido reestablecer contraseña -->
+
+        <!-- <p class="modal-text">
+          Ingresa el número de telefono para reestablecer tu contraseña
+        </p>
+
+        <form class="modal-form" action="" method="post">
+          <input class="modal-input" type="email" name="name" value="" placeholder="Número telefonico">
+          <button class="modal-button" type="submit" name="button">Enviar</button>
+        </form>
+        <div class="modal-links">
+          <a href="#" class="modal-link">Terminos y condiciones</a>
+        </div> -->
+
+        <!-- fin contenido reestablecer contraseña -->
+
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header-container background">
+        <a href="/">
+          <span class="modal-logo" style="text-align: center">LOGO</span>
+          <!-- <img class="header-logo" src="dist/images/logo.png" alt="">
+          <img class="header-logo-responsive" src="dist/images/logo-responsive.png" alt=""> -->
+        </a>
+
+        <div class="header-menus">
+          <i class="header-icon header-menu-responsive icon-menu" id="mobile-menu"></i>
+
+          <nav class="header-nav" id="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#">Sueños</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Rituales</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Tarot</a>
+              </li>
+            </ul>
+          </nav>
+
+          <i class="header-icon icon-user" id="signin"></i>
+        </div>
+      </div>
+    </header>
+
+    <div id="app">
+
+      <section class="hero-container hero-large">
+
+        <!-- Cover del video -->
+        <div id="hero-tape">
+          <div class="hero-cover" id="hero-cover">
+            <img src="../dist/images/cover.jpg" alt="">
+            <i class="icon-play hero-play" id="play-button"></i>
+          </div>
+          <div class="hero-bottom">
+            <div class="video-info">
+              <h2 class="video-artist">Coldplay</h2>
+              <h1 class="video-name">Adventure Of A Lifetime live for BBC Radio 1</h1>
+              <div class="video-options">
+                <div class="video-options">
+                  <a href="#" class="video-genere">Música</a>
+                  <i class="icon-views video-views "></i>
+                  <i class="icon-like video-likes "></i>
+                </div>
+                <div class="video-points">
+                  <i class="icon-point video-point video-point_active "></i>
+                  <i class="icon-point video-point"></i>
+                  <i class="icon-point video-point"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="videos-container videos-musica">
+
+
+        <!-- titulo de la seccion -->
+        <div class="videos-seleccion">
+          <div class="videos-title">
+            <h2 class="videos-category">Música</h2>
+          </div>
+          <div class="">
+            <i class="icon-prev videos-prev"></i>
+            <i class="icon-next videos-next "></i>
+          </div>
+        </div>
+        <!-- fin titulo de la seccion -->
+
+        <!-- contenedor videos -->
+        <div class="videos-items">
+
+          <!-- Video individual -->
+          <div class="videos-item" id="video-item">
+            <div class="videos-item-tape">
+              <img src="../dist/images/cover.jpg" class="videos-item-cover" alt="">
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Banhart</h2>
+              <div class="videos-item-info">
+                <div>
+                  <span class="videos-item-time">2 años</span>
+                  <span class="videos-item-likes">
+                    <i class="icon-like videos-item-icon"></i>
+                    4.500
+                  </span>
+                  <span class="videos-item-message">
+                    <i class="icon-message videos-item-icon"></i>
+                    23
+                  </span>
+                  </div>
+                <div>
+                  <span class="videos-item-duration">3:24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- fin video individual -->
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../dist/images/cover.jpg" class="videos-item-cover" alt="">
+
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Banhart</h2>
+              <div class="videos-item-info">
+                <div>
+                  <span class="videos-item-time">2 años</span>
+                  <span class="videos-item-likes">
+                    <i class="icon-like videos-item-icon"></i>
+                    4.500
+                  </span>
+                  <span class="videos-item-message">
+                    <i class="icon-message videos-item-icon"></i>
+                    23
+                  </span>
+                  </div>
+                <div>
+                  <span class="videos-item-duration">3:24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../dist/images/cover.jpg" class="videos-item-cover" alt="">
+
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Banhart</h2>
+              <div class="videos-item-info">
+                <div>
+                  <span class="videos-item-time">2 años</span>
+                  <span class="videos-item-likes">
+                    <i class="icon-like videos-item-icon"></i>
+                    4.500
+                  </span>
+                  <span class="videos-item-message">
+                    <i class="icon-message videos-item-icon"></i>
+                    23
+                  </span>
+                  </div>
+                <div>
+                  <span class="videos-item-duration">3:24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../dist/images/cover.jpg" class="videos-item-cover" alt="">
+
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Banhart</h2>
+              <div class="videos-item-info">
+                <div>
+                  <span class="videos-item-time">2 años</span>
+                  <span class="videos-item-likes">
+                    <i class="icon-like videos-item-icon"></i>
+                    4.500
+                  </span>
+                  <span class="videos-item-message">
+                    <i class="icon-message videos-item-icon"></i>
+                    23
+                  </span>
+                  </div>
+                <div>
+                  <span class="videos-item-duration">3:24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- dropdown -->
+        <div class="dropdown-container hiden dropdown-musica">
+          <a class="dropdown-close">X</a>
+          <div class="dropdown-gradient">
+            <div class="dropdown-content">
+              <div>
+                <h3 class="dropdown-artist">Happy Hippie Presents:</h3>
+                <h2 class="dropdown-name">50 Ways to Leave Your Lover...</h2>
+              </div>
+              <span class="dropdown-time">3:24</span>
+              <p class="dropdown-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid omnis, minus nulla temporibus molestias necessitatibus fuga accusantium nemo quidem, optio tempore, minima, blanditiis vel! Maiores sit optio unde nobis cumque?</p>
+
+              <div class="dropdown-icons">
+                <img src="../dist/images/cover.jpg" alt="" class="dropdown-avatar">
+                <span class="dropdown-user">scientifantastic</span>
+                <a href="#" class="video-genere">Música</a>
+                <i class="icon-views video-views "></i>
+                <i class="icon-like video-likes "></i>
+              </div>
+            </div>
+            <div class="dropdown-player">
+              <i class="icon-play hero-play" id="play-button"></i>
+
+            </div>
+          </div>
+        </div>
+        <!-- fin dropdown -->
+      </section>
+
+
+      <section class="videos-container videos-series">
+
+        <!-- titulo de la seccion -->
+        <div class="videos-seleccion">
+          <div class="videos-title">
+            <h2 class="videos-category">Series</h2>
+          </div>
+          <div class="">
+            <i class="icon-prev videos-prev"></i>
+            <i class="icon-next videos-next "></i>
+          </div>
+        </div>
+        <!-- fin titulo de la seccion -->
+
+        <!-- contenedor videos -->
+        <div class="videos-items">
+
+          <!-- Video individual -->
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../dist/images/cover.jpg" class="videos-item-cover" alt="">
+
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Banhart</h2>
+              <div class="videos-item-info">
+                <div>
+                  <span class="videos-item-time">2 años</span>
+                  <span class="videos-item-likes">
+                    <i class="icon-like videos-item-icon"></i>
+                    4.500
+                  </span>
+                  <span class="videos-item-message">
+                    <i class="icon-message videos-item-icon"></i>
+                    23
+                  </span>
+                  </div>
+                <div>
+                  <span class="videos-item-duration">3:24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- fin video individual -->
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../dist/images/cover.jpg" class="videos-item-cover" alt="">
+
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Banhart</h2>
+              <div class="videos-item-info">
+                <div>
+                  <span class="videos-item-time">2 años</span>
+                  <span class="videos-item-likes">
+                    <i class="icon-like videos-item-icon"></i>
+                    4.500
+                  </span>
+                  <span class="videos-item-message">
+                    <i class="icon-message videos-item-icon"></i>
+                    23
+                  </span>
+                  </div>
+                <div>
+                  <span class="videos-item-duration">3:24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../dist/images/cover.jpg" class="videos-item-cover" alt="">
+
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Banhart</h2>
+              <div class="videos-item-info">
+                <div>
+                  <span class="videos-item-time">2 años</span>
+                  <span class="videos-item-likes">
+                    <i class="icon-like videos-item-icon"></i>
+                    4.500
+                  </span>
+                  <span class="videos-item-message">
+                    <i class="icon-message videos-item-icon"></i>
+                    23
+                  </span>
+                  </div>
+                <div>
+                  <span class="videos-item-duration">3:24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../dist/images/cover.jpg" class="videos-item-cover" alt="">
+
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Banhart</h2>
+              <div class="videos-item-info">
+                <div>
+                  <span class="videos-item-time">2 años</span>
+                  <span class="videos-item-likes">
+                    <i class="icon-like videos-item-icon"></i>
+                    4.500
+                  </span>
+                  <span class="videos-item-message">
+                    <i class="icon-message videos-item-icon"></i>
+                    23
+                  </span>
+                  </div>
+                <div>
+                  <span class="videos-item-duration">3:24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- dropdown -->
+        <div class="dropdown-container hiden dropdown-series">
+          <a  class="dropdown-close">X</a>
+          <div class="dropdown-gradient">
+            <div class="dropdown-content">
+              <div>
+                <h3 class="dropdown-artist">Happy Hippie Presents:</h3>
+                <h2 class="dropdown-name">50 Ways to Leave Your Lover...</h2>
+              </div>
+              <span class="dropdown-time">3:24</span>
+              <p class="dropdown-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid omnis, minus nulla temporibus molestias necessitatibus fuga accusantium nemo quidem, optio tempore, minima, blanditiis vel! Maiores sit optio unde nobis cumque?</p>
+
+              <div class="dropdown-icons">
+                <img src="../dist/images/cover.jpg" alt="" class="dropdown-avatar">
+                <span class="dropdown-user">scientifantastic</span>
+                <a href="#" class="video-genere">Música</a>
+                <i class="icon-views video-views "></i>
+                <i class="icon-like video-likes "></i>
+              </div>
+            </div>
+            <div class="dropdown-player">
+              <i class="icon-play hero-play" id="play-button"></i>
+
+            </div>
+          </div>
+        </div>
+        <!-- fin dropdown -->
+      </section>
+
+    <!-- fin app container -->
+    </div>
+
+    <footer class="footer-container">
+      <div class="footer-left">
+        <a href="#" class="footer-logo">
+          LOGO
+        </a>
+
+        <a href="#">
+          <i class="footer-icon icon-facebook"></i>
+        </a>
+
+        <a href="#">
+          <i class="footer-icon icon-twitter"></i>
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <a href="#" class="footer-terminos">Terminos y Condiciones </a>
+      </div>
+
+
+    </footer>
+  <script type="text/javascript" src="../dist/app.js"></script>
+  </body>
+</html>
