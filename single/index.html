@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videoteca</title>
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="../dist/style.css">
+
+  </head>
+  <body>
+    <div class="modal-container hiden" id="modal">
+      <div class="modal-box">
+        <a class="modal-close" id="modal-close">X</a>
+        <span class="modal-logo" style="text-align: center">LOGO</span>
+        <!-- <img class="modal-logo" src="../dist/images/logo.png" alt=""> -->
+        <div class="modal-content">
+
+        <!-- contenido del modal login-->
+
+          <form class="modal-form" action="" method="post">
+            <input class="modal-input" type="text" name="name" value="" placeholder="Nombre del usuario">
+            <input class="modal-input" type="email" name="name" value="" placeholder="Correo">
+            <button class="modal-button" type="submit" name="button">Ingresar</button>
+          </form>
+
+          <div class="modal-links">
+            <a href="#" class="modal-link">No tengo Cuenta</a>
+            <a href="#" class="modal-link">Olvide mi Contraseña</a>
+          </div>
+
+        <!-- fin contenido del modal login-->
+
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header-container background">
+        <a href="/">
+          <span class="modal-logo" style="text-align: center">LOGO</span>
+          <!-- <img class="header-logo" src="dist/images/logo.png" alt="">
+          <img class="header-logo-responsive" src="dist/images/logo-responsive.png" alt=""> -->
+        </a>
+
+        <div class="header-menus">
+          <i class="header-icon header-menu-responsive icon-menu" id="mobile-menu"></i>
+
+          <nav class="header-nav" id="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#">Sueños</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Rituales</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Tarot</a>
+              </li>
+            </ul>
+          </nav>
+
+          <i class="header-icon icon-user" id="signin"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="app">
+
+      <section class="single-player">
+
+        <div class="player-container">
+          <video  controls="">
+          	<!-- MP4 must be first for iPad! -->
+          	<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4"><!-- Safari / iOS, IE9 -->
+          	<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm"><!-- Chrome10+, Ffx4+, Opera10.6+ -->
+          	<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg"><!-- Firefox3.6+ / Opera 10.5+ -->
+          	<!-- fallback to Flash: -->
+          	<object  type="application/x-shockwave-flash" data="player.swf">
+          		<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+          		<param name="movie" value="player.swf">
+          		<param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=poster.jpg&amp;file=http://clips.vorwaerts-gmbh.de/VfE_flash.mp4">
+          		<!-- fallback image -->
+          		<img src="../dist/images/cover.jpg"  alt="" title="No video playback capabilities, please download the video below">
+          	</object>
+          </video>
+        </div>
+
+        <div class="single-options">
+          <a href="#" class="video-genere">Música</a>
+          <i class="icon-views video-likes"></i>
+          <i class="icon-like video-views"></i>
+        </div>
+      </section>
+
+      <div class="single-sections">
+
+        <section class="single-social">
+          <div class="single-info">
+            <h3 class="single-info-artist">Coldplay</h3>
+            <h2 class="single-info-name">Adventure Of a Lifetime live for BBC Radio 1</h2>
+            <div class="single-info-inf">
+              <span class="single-info-views">2.4M Plays</span>
+              <span class="single-info-time">2 años</span>
+              <i class="icon-like single-icon"></i>
+              <span class="single-info-likes">4.500</span>
+              <i class="icon-message single-icon"></i>
+              <span class="single-info-comments">23</span>
+            </div>
+            <div class="single-info-share">
+              <i class="icon-social-facebook single-icon-social"></i>
+              <i class="icon-social-twitter single-icon-social"></i>
+              <i class="icon-social-plus single-icon-social"></i>
+              <i class="icon-social-mail single-icon-social"></i>
+              <i class="icon-social-share single-icon-social"></i>
+            </div>
+            <p class="single-info-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae natus sapiente neque ipsam quaerat culpa accusamus nisi vel, debitis, pariatur consectetur? Odio molestias cumque, aspernatur adipisci voluptate sit itaque ipsam!
+            </p>
+          </div>
+
+          <div class="single-commets">
+            <div class="single-comments-order">
+              <h3 class="single-comments-title">Comentarios</h3>
+              <div>
+                <a href="#" class="single-comments-ultimos">Últimos</a>
+                <a href="#" class="single-comments-populares">Populares</a>
+              </div>
+            </div>
+
+            <div class="single-comments-write">
+              <img src="../dist/images/cover.jpg" alt="" class="single-comments-avatar">
+              <form action="" class="single-comments-form">
+                <textarea name="name" rows="8" cols="40" class="single-comments-input" placeholder="Comenta"></textarea>
+              </form>
+            </div>
+
+            <div class="single-comments-comment">
+              <div class="single-comments-top">
+                <img src="../dist/images/cover.jpg" alt="" class="single-comments-avatar-small">
+                <span class="single-comments-user">Scientifantastic</span>
+                <span class="single-comments-time">Hace 1 dia</span>
+              </div>
+              <p class="single-comments-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut fuga minus iusto provident sapiente sed velit distinctio ipsam. Doloremque magnam sint, possimus placeat praesentium rem explicabo laborum cupiditate delectus.
+              </p>
+            </div>
+
+            <div class="single-comments-comment">
+              <div class="single-comments-top">
+                <img src="../dist/images/cover.jpg" alt="" class="single-comments-avatar-small">
+                <span class="single-comments-user">Scientifantastic</span>
+                <span class="single-comments-time">Hace 1 dia</span>
+              </div>
+              <p class="single-comments-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut fuga minus iusto provident sapiente sed velit distinctio ipsam. Doloremque magnam sint, possimus placeat praesentium rem explicabo laborum cupiditate delectus.
+              </p>
+            </div>
+
+
+          </div>
+
+        </section>
+
+        <section class="single-videos">
+          <h3 class="single-videos-section">Recomendados</h2>
+
+          <div class="single-videos-video">
+            <img src="../dist/images/cover.jpg" alt="" class="single-videos-img">
+            <div class="single-videos-info">
+              <h4 class="single-videos-title">Happy Hippie Present: 50 Way to Leave Your Lover...</h4>
+              <span class="single-videos-time">3:24</span>
+            </div>
+          </div>
+
+          <div class="single-videos-video">
+            <img src="../dist/images/cover.jpg" alt="" class="single-videos-img">
+            <div class="single-videos-info">
+              <h4 class="single-videos-title">Happy Hippie Present: 50 Way to Leave Your Lover...</h4>
+              <span class="single-videos-time">3:24</span>
+            </div>
+          </div>
+
+          <div class="single-videos-video">
+            <img src="../dist/images/cover.jpg" alt="" class="single-videos-img">
+            <div class="single-videos-info">
+              <h4 class="single-videos-title">Happy Hippie Present: 50 Way to Leave Your Lover...</h4>
+              <span class="single-videos-time">3:24</span>
+            </div>
+          </div>
+
+          <div class="single-videos-video">
+            <img src="../dist/images/cover.jpg" alt="" class="single-videos-img">
+            <div class="single-videos-info">
+              <h4 class="single-videos-title">Happy Hippie Present: 50 Way to Leave Your Lover...</h4>
+              <span class="single-videos-time">3:24</span>
+            </div>
+          </div>
+
+          <div class="single-videos-video">
+            <img src="../dist/images/cover.jpg" alt="" class="single-videos-img">
+            <div class="single-videos-info">
+              <h4 class="single-videos-title">Happy Hippie Present: 50 Way to Leave Your Lover...</h4>
+              <span class="single-videos-time">3:24</span>
+            </div>
+          </div>
+
+
+        </section>
+
+
+      </div>
+
+
+
+    </div>
+
+    <footer class="footer-container">
+      <div class="footer-left">
+        <a href="#" class="footer-logo">
+          LOGO
+        </a>
+
+        <a href="#">
+          <i class="footer-icon icon-facebook"></i>
+        </a>
+
+        <a href="#">
+          <i class="footer-icon icon-twitter"></i>
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <a href="#" class="footer-terminos">Terminos y Condiciones </a>
+      </div>
+
+
+    </footer>
+
+  <script type="text/javascript" src="../dist/app.js"></script>
+  </body>
+</html>
