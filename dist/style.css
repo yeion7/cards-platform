@@ -669,7 +669,7 @@ a {
 .terminos-term-text {
   color: #777;
 }
-.cards {
+.sections {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -689,36 +689,49 @@ a {
   padding: 15px;
   width: 100%;
 }
-.card {
+.section {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   background: #e46582;
+  bottom: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 300px;
-  margin: 15px;
+  height: 90px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: height 0.5s ease;
+          transition: height 0.5s ease;
+}
+.section:hover {
+  height: 100%;
+}
+.section-container {
+  height: 300px;
+  margin: 15px;
+  position: relative;
   width: 350px;
 }
-.card:hover {
-  background: #c42247;
-}
-.card-title {
+.section-title {
   font-size: 2em;
   font-weight: bold;
+  margin-left: 20px;
   padding: 20px 0;
+}
+.section-face {
+  height: 100%;
+  width: 100%;
+}
+.section-face:hover ~ .section {
+  height: 100%;
 }
 .perfil {
   -webkit-box-align: start;

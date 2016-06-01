@@ -1,4 +1,4 @@
-.cards
+.sections
   align-items: center
   color: $color-text2
   display: flex
@@ -7,20 +7,37 @@
   padding: 15px
   width: 100%
 
-.card
+.section
   align-items: center
   background: $color-secundary
+  bottom: 0
   display: flex
-  flex-direction: column
-  height: 300px
-  margin: 15px
+  height: 90px
   justify-content: center
-  width: 350px
+  left: 0
+  position: absolute
+  right: 0
+  transition: height 0.5s ease;
 
   &:hover
-    background: darken($color-secundary, 30%)
+    height: 100%
+
+  &-container
+    height: 300px
+    margin: 15px
+    position: relative
+    width: 350px
+
 
   &-title
     font-size: 2em
     font-weight: bold
+    margin-left: 20px
     padding: 20px 0
+
+  &-face
+    height: 100%
+    width: 100%
+
+    &:hover ~ .section
+      height: 100%
