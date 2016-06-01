@@ -149,7 +149,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px 15px;
-  background: #4c2f65;
+  background: #3e2655;
+  height: 58px;
 }
 .footer-left,
 .footer-right {
@@ -287,7 +288,7 @@ a {
   }
 }
 .header-nav {
-  background: #4c2f65;
+  background: #3e2655;
   display: none;
   left: 0;
   position: absolute;
@@ -351,7 +352,7 @@ a {
   border-bottom: solid 3px #e46582;
 }
 .nav-item a:active {
-  color: #4c2f65;
+  color: #3e2655;
 }
 .hero {
   -webkit-box-align: center;
@@ -623,7 +624,7 @@ a {
   color: #e46582;
 }
 .modal-title {
-  color: #4c2f65;
+  color: #3e2655;
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 15px;
@@ -664,7 +665,7 @@ a {
   font-weight: bold;
   font-size: 1.2em;
   padding-bottom: 5px;
-  color: #4c2f65;
+  color: #3e2655;
 }
 .terminos-term-text {
   color: #777;
@@ -910,7 +911,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  background: #4c2f65;
+  background: #3e2655;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1195,7 +1196,7 @@ a {
   background: #fff;
 }
 .single-icon {
-  color: #4c2f65;
+  color: #3e2655;
 }
 .single-icon-social {
   color: #fff;
@@ -1210,7 +1211,7 @@ a {
 }
 .single-info-artist {
   font-size: 1.3em;
-  color: #4c2f65;
+  color: #3e2655;
   font-weight: bold;
 }
 .single-info-name {
@@ -1266,7 +1267,7 @@ a {
 }
 .single-comments-ultimos:active,
 .single-comments-populares:active {
-  background: #4c2f65;
+  background: #3e2655;
   color: #fff;
 }
 .single-comments-write {
@@ -1335,7 +1336,7 @@ a {
 }
 .single-comments-user {
   text-transform: uppercase;
-  color: #4c2f65;
+  color: #3e2655;
   padding: 0 1em;
   font-weight: bold;
 }
@@ -1404,7 +1405,7 @@ a {
   line-height: 1.2em;
 }
 .single-videos-time {
-  color: #4c2f65;
+  color: #3e2655;
   font-weight: bold;
   font-size: 0.9em;
 }
@@ -1479,8 +1480,8 @@ a {
           transform: translate(-50%, -50%);
   font-size: 6em;
   cursor: pointer;
-  color: #4c2f65;
-  box-shadow: inset 0 0 0.7em #4c2f65;
+  color: #3e2655;
+  box-shadow: inset 0 0 0.7em #3e2655;
   padding: 0;
   border-radius: 50%;
 }
@@ -1510,7 +1511,7 @@ a {
   width: 100%;
 }
 .video-artist {
-  color: #4c2f65;
+  color: #3e2655;
   font-weight: bold;
   font-size: 1em;
   padding: 0.3em 0;
@@ -1545,21 +1546,21 @@ a {
           justify-content: space-between;
 }
 .video-genere {
-  color: #4c2f65;
+  color: #3e2655;
   border: 2px solid;
   padding: 0.4em 0.8em;
   border-radius: 8px;
   margin: 0px 0.5em;
 }
 .video-genere:hover {
-  background: #4c2f65;
-  border: 2px solid #4c2f65;
+  background: #3e2655;
+  border: 2px solid #3e2655;
   color: #fff;
 }
 .video-views,
 .video-likes {
   cursor: pointer;
-  color: #4c2f65;
+  color: #3e2655;
   font-size: 2em;
   margin: 0 0.5em;
   padding: 0.5em 0;
@@ -1568,13 +1569,13 @@ a {
   margin: 0.5em;
 }
 .video-point {
-  color: #4c2f65;
+  color: #3e2655;
   margin: 0.2em;
   cursor: pointer;
   border-radius: 50%;
 }
 .video-point_active {
-  background: #4c2f65;
+  background: #3e2655;
 }
 .video-left {
   width: 60%;
@@ -1598,7 +1599,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 15px;
-  background: #4c2f65;
+  background: #3e2655;
   text-transform: uppercase;
   padding: 1em;
   font-weight: bold;
@@ -1620,7 +1621,7 @@ a {
           justify-content: flex-end;
 }
 .video-text {
-  color: #4c2f65;
+  color: #3e2655;
   font-size: 1.8em;
   font-weight: bold;
 }
@@ -1678,10 +1679,10 @@ a {
   cursor: pointer;
 }
 .videos-order:hover {
-  color: #4c2f65;
+  color: #3e2655;
 }
 .videos-order:active {
-  background: #4c2f65;
+  background: #3e2655;
   border-radius: 5px;
   color: #fff;
 }
@@ -1715,15 +1716,15 @@ a {
 }
 .videos-next {
   padding: 0.4em;
-  border: 3px solid #4c2f65;
+  border: 3px solid #3e2655;
   border-radius: 4px;
   color: #ccc;
-  background: #4c2f65;
+  background: #3e2655;
   cursor: pointer;
 }
 .videos-icon {
   font-size: 1.5em;
-  color: #4c2f65;
+  color: #3e2655;
   margin-right: 5px;
 }
 .videos-items {
@@ -1784,11 +1785,11 @@ a {
   font-weight: bold;
 }
 .videos-item-icon {
-  color: #4c2f65;
+  color: #3e2655;
 }
 .videos-item-duration {
   font-size: 0.8em;
-  color: #4c2f65;
+  color: #3e2655;
   font-weight: bold;
 }
 .videos-item-name {
@@ -1812,7 +1813,7 @@ a {
   font-weight: bold;
 }
 .videos-selected {
-  border: 5px solid #4c2f65;
+  border: 5px solid #3e2655;
   position: relative;
 }
 .videos-selected:after {
@@ -1825,7 +1826,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 25px 15px 0 15px;
-  border-color: #4c2f65 transparent transparent transparent;
+  border-color: #3e2655 transparent transparent transparent;
 }
 .dropdown-container {
   width: 100%;
@@ -1874,7 +1875,7 @@ a {
 .dropdown-artist {
   font-size: 1.3em;
   font-weight: bold;
-  color: #4c2f65;
+  color: #3e2655;
   margin-bottom: 5px;
 }
 .dropdown-name {
@@ -1883,7 +1884,7 @@ a {
   color: #fff;
 }
 .dropdown-time {
-  color: #4c2f65;
+  color: #3e2655;
   font-weight: bold;
 }
 .dropdown-text {
@@ -1933,7 +1934,7 @@ body {
   position: relative;
 }
 .button-primary {
-  background: #4c2f65;
+  background: #3e2655;
   border: 0;
   border-radius: 4px;
   color: #fff;
